@@ -1,5 +1,4 @@
-//alert('my name is chinelo')
-const home = (() => {
+export default function home () {
 
     const content = document.querySelector("#content");
 
@@ -12,9 +11,7 @@ const home = (() => {
         <h1 style="color: rgb(110, 216, 110);">Chilos Food</h1>
         <p>This Restaurant is great and it sells extremely healthy food stuff</p>
     </div>`
-
+console.log('home module executed')
     content.appendChild(homepage)
 
-})()
-
-export {home};
+}

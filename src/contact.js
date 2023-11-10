@@ -1,4 +1,4 @@
-const contact = (() => {
+export default function contact () {
 
     const content = document.querySelector("#content")
 
@@ -16,6 +16,4 @@ const contact = (() => {
     content.appendChild(contactpage)
     console.log('contactpage')
 
-})()
-
-export default contact;
+}

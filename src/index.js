@@ -1,5 +1,4 @@
-import {pageLoad} from './pgload'
-import {home} from './home';
+import home from './home';
 import menu from './menu';
 import contact from './contact';
 
@@ -7,31 +6,35 @@ console.log('the website is working')
 
 const contentContainer = document.querySelector("#content");
 
-//const tab = document.createElement("div")
-
-const getMenu = document.createElement('button')
-
-getMenu.addEventListener('click', function () {
-    menu()
-})
-contentContainer.appendChild(getMenu);
-
-const getContact = document.createElement('button')
-
-getContact.addEventListener('click', function () {
-    contact()
-})
-contentContainer.appendChild(getContact);
-
-const getHome = document.createElement('button')
-
-getHome.addEventListener('click', function () {
-    
+const main = (() => {
     home()
-})
-contentContainer.appendChild(getHome);
-/*
-    tab.innerHTML =
-    `<button id='menupage'> menu </button>
-    <button id='contactpage'> </button>
-    <button id='homepage'></button>`*/
+    const tab = document.createElement("div");
+    
+    const getMenu = document.createElement('button');
+    getMenu.textContent = 'Menu';
+    getMenu.addEventListener('click', () => {
+       //contentContainer.innerHTML = '';
+        menu()
+        console.log('mainmenu')
+    });
+
+
+    const getContact = document.createElement('button');
+    getContact.textContent = 'Contact';
+    getContact.addEventListener('click', contact);
+
+    const getHome = document.createElement('button');
+    getHome.textContent = 'Home';
+    getHome.addEventListener('click', function(){
+        home()
+        console.log('home index')
+    });
+
+    tab.appendChild(getMenu);
+    tab.appendChild(getContact);
+    tab.appendChild(getHome);
+
+    contentContainer.appendChild(tab);
+
+    console.log('main')
+})();
