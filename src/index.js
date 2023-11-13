@@ -1,12 +1,14 @@
 import home from './home';
 import menu from './menu';
 import contact from './contact';
+import pageLoad from './pgload'
 
 console.log('the website is working')
 
 const contentContainer = document.querySelector("#content");
 
 const main = (() => {
+    pageLoad()
     home()
     const tab = document.createElement("div");
     

@@ -1,22 +1,26 @@
-const pageLoad = (() => {
+export default function pageLoad ()  {
     //container
     const contentContainer = document.querySelector("#content");
   
     const header = document.createElement("header");
     header.innerHTML = `
-    <nav>
-    <h2>Food-on-a-Plate</h2>
-    <a href="#" class="hamburger">
-      <span class="line line1"></span>
-      <span class="line line2"></span>
-      <span class="line line3"></span>
-    </a>
-    <ul class="links">
-      <li data-tab-target="#home" class="tab red">Home</li>
-      <li data-tab-target="#menu" class="tab">Menu</li>
-      <li data-tab-target="#contact" class="tab">Contact us</li>
-    </ul>
-  </nav>`;
+    <div class="nav-container">
+    <img src="../assets/chilos-food.png">
+        <div>
+            <h2>Chilos Foods</h2>
+         </div>
+        <div class="tab"> 
+            <div class="tab red">Home</div>
+            <div class="tab">Menu</div>
+            <div class="tab">Contact us</div>
+        </div>  
+    </div> `;
+
+    const footer = document.createElement("footer");
+    footer.innerHTML = 
+    `<footer> Created by Chinelo Nwobbi </footer>`
   
       contentContainer.appendChild(header)
-  })();
+      //contentContainer.appendChild(footer)
+  };
+

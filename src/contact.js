@@ -5,12 +5,10 @@ export default function contact () {
     const contactpage = document.createElement("div")
 
     contactpage.innerHTML = 
-    `<div>
-        <ul>
-            <li> Address: Cowrie Creek Estate</li>
-            <li> Phone Number: 08033156908</li>
-            <li> E-mail: chilosintergratedservices@gmail.com </li>
-        </ul>
+    `<div class="contactpage">
+            <div> Address: Cowrie Creek Estate</div>
+            <div> Phone Number: 08033156908</div>
+            <div> E-mail: chilosintergratedservices@gmail.com </div>
     </div>`
 
     content.appendChild(contactpage)

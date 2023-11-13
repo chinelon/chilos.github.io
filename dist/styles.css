@@ -1,5 +1,71 @@
 :root{
     --text: #000000ef;
-    --bg: #5c1e54;
+    --bg: green;
     --btn-bg: #c6a3ee;
+    background-image: url(../assets/veggiess.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.nav-container{
+    display: flex;
+    background-color:var(--bg);
+    padding: 20px;
+}
+
+.nav-container div{
+    flex: 1;
+}
+
+.tab{
+    display: flex;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.contactpage{
+    background-color: var(--bg);
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 100px;
+    margin-left: 450px;
+}
+
+.home{
+    background-color:  var(--bg);
+    margin-top: 50px;
+    height: 500px;
+    width: 600px;
+    margin-left: 430px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h1{
+    color: var(--text);
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+p, ul, li{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#open{
+    text-align: center;
+    margin-top: 30px;
+}
+
