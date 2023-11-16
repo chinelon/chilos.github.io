@@ -6,7 +6,7 @@ export default function home () {
 
     homepage.innerHTML = 
     `<div class="home">
-        <h1>Welcome to Chilo's Foods!</h1>
+        <h1>Welcome to Chilos Foods!</h1>
         <h1>Chilos Food</h1>
         <p>Your One Stop Shop to healthy meals in Lagos!</p>
         <h2 id="open" > Opening Times </h2>

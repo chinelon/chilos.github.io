@@ -1,3 +1,4 @@
+
 :root{
     --text: #000000ef;
     --bg: green;
@@ -5,6 +6,7 @@
     background-image: url(../assets/veggiess.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Agbalumo';
 }
 
 * {
@@ -35,7 +37,7 @@ img{
 
 .contactpage{
     background-color: var(--bg);
-    width: 500px;
+    width: 600px;
     height: 500px;
     border-radius: 20px;
     margin: 100px;
@@ -45,7 +47,7 @@ img{
 .home{
     background-color:  var(--bg);
     margin-top: 50px;
-    height: 500px;
+    height: 600px;
     width: 600px;
     margin-left: 430px;
     border-radius: 20px;
@@ -67,5 +69,10 @@ p, ul, li{
 #open{
     text-align: center;
     margin-top: 30px;
+}
+
+i{
+    margin-top: 20px;
+    padding: 20px;
 }
 
